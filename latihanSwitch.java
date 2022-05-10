@@ -11,7 +11,7 @@ public class latihanSwitch {
         Scanner userInput = new Scanner(System.in);
         
         //program menghitung hari dengan switch statemeent
-        int selisihTanggal, tanggalAwal, tanggalAkhir;
+        int selisihHari, tanggalAwal, tanggalAkhir;
         String hariIni;
 
         System.out.println("Hari ini Hari apa? ");
@@ -48,10 +48,10 @@ public class latihanSwitch {
         }
 
         //menentukan nilai tanggal
-        selisihTanggal = ( tanggalAkhir + tanggalAwal ) % 7;
+        selisihHari = ( tanggalAkhir + tanggalAwal ) % 7;
         
         //konversi nilai ke hari
-        switch (selisihTanggal) {
+        switch (selisihHari) {
             case 1:
                 System.out.println("Senin");
                 break;
